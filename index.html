@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="modal.css" type="text/css" />
+		<title>Modal</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Your Subscriptions</h1>
+			<table>
+				<thead>
+					<tr>
+						<th>Subscription</th>
+						<th>Next Rebill</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>$49.99 per month</td>
+						<td>December 13, 2020</td>
+						<td><button data-modal-target="#modal">Cancel</button></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="modal" id="modal">
+				<div class="modal-header">
+					<h2>Are you sure you want to cancel your subscription?</h2>
+				</div>
+				<div class="choose-button">
+					<button data-close-modal class="confirm no-btn">No</button>
+					<button class="confirm">Yes</button>
+				</div>
+			</div>
+
+		</div>
+		<div class="overlay"></div>
+		
+		<footer>
+			<script type="text/javascript" src="modal.js"></script>
+		</footer>
+	</body>
+</html>

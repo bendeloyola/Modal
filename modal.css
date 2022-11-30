@@ -1,0 +1,86 @@
+html, body {
+	background: #000;
+	color: #fff;
+	font-family: "Arial", sans-serif;
+}
+
+.container {
+	width: 800px;
+	margin: 0 auto;
+}
+
+table {
+	border: 0;
+}
+
+th {
+	font-weight: bold;
+	background: #222;
+	padding: 5px 10px;
+}
+
+td {
+	padding: 10px 20px;
+	border: 1px solid #222;
+}
+
+button {
+	display: inline-block;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background: #ff0000;
+	cursor: pointer;   /* property and value to know the button is clickable */
+}
+
+
+.modal{
+	position: fixed;
+	padding: 20px 0;
+	transform: scale(0);
+	border: 1px solid white;
+	z-index: 10;
+}
+
+.modal.active{
+	transform: scale(1);
+}
+
+.modal-header{
+	border-bottom: 1px solid white;
+}
+
+.modal-header h2{
+	padding: 0 10px;
+}
+
+.choose-button{
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+}
+
+.confirm{
+	width: 70px;
+	height: 50px;
+	margin: 0 20px;
+}
+
+.no-btn{
+	background-color: white;
+}
+
+.overlay{
+	position: fixed;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .5);
+	pointer-events: none;
+}
+
+.overlay.active{
+	opacity: 1;
+	pointer-events: all;
+}
